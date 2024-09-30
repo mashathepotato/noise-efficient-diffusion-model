@@ -1,3 +1,7 @@
-venv/*
+venv
+
 data/*
 cifar10_images/*
+
+notebooks/__pycache__
+notebooks/utils/__pycache__
