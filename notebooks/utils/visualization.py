@@ -13,7 +13,6 @@ def visualize_noisy_samples(images, noisy_images, num_samples=5):
     images = images.cpu().numpy()
     noisy_images = noisy_images.cpu().numpy()
     
-    # Denormalize the images (assuming they were normalized between -1 and 1)
     images = (images * 0.5) + 0.5 
     noisy_images = (noisy_images * 0.5) + 0.5 
     
