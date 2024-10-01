@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 
 class GaussianDiffusion(nn.Module):
-    def __init__(self, img_size, timesteps=1000, beta_start=0.0001, beta_end=0.02, device='cpu'):
+    def __init__(self, img_size, timesteps=200, beta_start=0.0001, beta_end=0.02, device='cpu'):
         super(GaussianDiffusion, self).__init__()
         self.img_size = img_size
         self.timesteps = timesteps
